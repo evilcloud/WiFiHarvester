@@ -107,7 +107,7 @@ wifi_buffer = None
 
 # scan_speed = fast_scan if is_highspeed() else slow_scan
 # scan_buffer = scan_speed
-scan_speed = 1
+scan_speed = 3
 lcd.print("Scan speed: " + str(scan_speed) + "\n")
 while True:
     power.setPowerLED(False)
@@ -118,7 +118,7 @@ while True:
     # scan_buffer = scan_speed
 
     # nr_buffer = nr
-    scan_speed = fast_scan if is_highspeed() else slow_scan
+    # scan_speed = fast_scan if is_highspeed() else slow_scan
     wifi_list = sta.scan()
     for station in wifi_list:
         ssid = station[0].decode()
@@ -135,7 +135,7 @@ while True:
                 + hidden_choices.get(hidden)
                 + authmode
             )
-            lcd.print(line + "\n")
+            # lcd.print(line + "\n")
             stations_full[bssid] = {
                 "ssid": ssid,
                 "bssid": bssid,
