@@ -23,6 +23,10 @@ def draw_grid():
     core.draw_grid()
 
 
+def draw_indicators(indicator, value):
+    core.draw_indicators(indicator, value)
+
+
 def get_text_halfwidth(text):
     return core.get_text_halfwidth(text)
 
@@ -57,6 +61,30 @@ def unnotify(message):
 
 def sleep_notice():
     core.sleep_notice()
+
+
+def csleep(t, powered=False):
+    powered = powered if powered else t
+    if power.getChargeState():
+        lcd.circle(310, 230, 5, lcd.RED, lcd.RED)
+        time.sleep(powered)
+        lcd.circle(310, 230, 5, lcd.RED, lcd.BLACK)
+    else:
+        core.csleep(t)
+
+
+# ========================= FS stuff ========================================
+
+
+def load_json(filename):
+    return core.load_json(filename)
+
+
+def write_json(filename, content):
+    core.write_json(filename, content)
+
+
+# ========================= TEST stuff =================================
 
 
 cclear()

@@ -1,4 +1,5 @@
 from m5stack import *
+import ujson as json
 import time
 
 
@@ -30,6 +31,24 @@ def draw_grid():
     lcd.line(160, 0, 160, 100)
 
 
+def draw_indicators(indicator, value):
+    tvalue = str(value)
+    coordinates = {
+        "AP": (0, 0, 160, 50),
+        "SSID": (160, 0, 160, 50),
+        "Cf": (0, 50, 160, 50),
+        "Cn": (160, 50, 160, 50),
+    }
+    x, y, x2, y2 = indicator.get(coordinates)
+    text = str(value)
+    text_halfwidth = int(lcd.textWidth(text) / 2)
+    lcd.rect(x, y, x2, y2)
+    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.text(x + 2, y + 2, text)
+    lcd.font(lcd.FONT_DejaVu40)
+    lcd.text(x + (x2 - text_halfwidth), y + 5, text)
+
+
 def get_text_halfwidth(text):
     return int(lcd.textWidth(str(text)) / 2)
 
@@ -40,7 +59,7 @@ def draw_ap(value):
     lcd.text(1, 1, "AP")
     lcd.font(lcd.FONT_DejaVu40)
     text = str(value)
-    lcd.text(int((320 / 4) - get_text_halfwidth(value)), 10, str(value))
+    lcd.text(int((320 / 4) - get_text_halfwidth(text)), 10, str(text))
 
 
 def draw_ssid(value):
@@ -102,6 +121,59 @@ def sleep_notice():
     time.sleep(5)
     lcd.circle(310, 230, 6, lcd.BLACK, lcd.BLACK)
 
+
+def csleep(t):
+    lcd.circle(310, 230, 5, lcd.GREEN, lcd.BLACK)
+    time.sleep(t)
+    lcd.circle(310, 230, 6, lcd.BLACK, lcd.BLACK)
+
+
+# ========================= FS stuff ========================================
+
+
+def load_json(filename):
+    content = {}
+    try:
+        with open(filename) as f:
+            content = json.load(f)
+    except Exception:
+        write_json(filename, content)
+    return content
+
+
+def write_json(filename, content):
+    # existing backup file
+    dev.notify("backup")
+    backup_name = "/sd/backup"
+    filelist = os.listdir()
+    for i in range(100):
+        construct = backup_name + str(i) + ".json"
+        if construct not in filelist:
+            backup_name = construct
+    else:
+        try:
+            os.remove(backup_name + ".json")
+            backup_name = backup_name + ".json"
+        except:
+            pass
+    try:
+        f = open(filename)
+        f.close()
+        os.rename(filename, backup_name)
+    except:
+        pass
+    dev.unnotify("backup")
+    dev.notify("saving")
+    try:
+        with open(filename, "w+") as f:
+            json.dump(content, f)
+    except Exception:
+        dev.unnotify("saving")
+        dev.notify("s-failed")
+        time.sleep(1)
+
+
+# ========================= TEST stuff =================================
 
 cclear()
 # lcd.restorewin()
