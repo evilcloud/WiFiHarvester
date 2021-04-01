@@ -4,6 +4,7 @@ import network
 import utime as time
 import ujson as json
 import ubinascii
+import uos as os
 
 
 def init_core():
@@ -15,8 +16,34 @@ def init_core():
     lcd.font(lcd.FONT_Ubuntu)
 
 
-def core_mark_power():
-    lcd.circle(310, 230, 5, lcd.RED, lcd.RED)
+def core2_sleep():
+    # lcd.rect(0, 100, 1, 140, lcd.RED, lcd.RED)
+    if power.getChargeState():
+        lcd.circle(310, 230, 5, lcd.RED, lcd.RED)
+        time.sleep(2)
+        lcd.circle(310, 230, 5, lcd.RED, lcd.BLACK)
+    else:
+        lcd.circle(310, 230, 5, lcd.GREEN, lcd.BLACK)
+        time.sleep(5)
+        lcd.circle(310, 230, 6, lcd.BLACK, lcd.BLACK)
+
+
+# def sleep(model):
+#     pass
+
+
+def core_notification(message):
+    x = 280
+    y = 220
+    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.text(x, y, message)
+
+
+def core_erase_notification(message):
+    x = 280
+    y = 220
+    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.textClear(x, y, message)
 
 
 def core_printlist(*args):
@@ -86,11 +113,28 @@ def load_json(filename):
 
 
 def write_json(filename, content):
+    # existing backup file
+    core_notification("backup")
+    backup_name = "/sd/backup.json"
+    try:
+        os.remove(backup_name)
+    except:
+        pass
+    try:
+        f = open(filename)
+        f.close()
+        os.rename(filename, backup_name)
+    except:
+        pass
+    core_erase_notification("backup")
+    core_notification("saving")
     try:
         with open(filename, "w+") as f:
             json.dump(content, f)
     except Exception:
-        pass
+        core_erase_notification("saving")
+        core_notification("s-failed")
+        time.sleep(1)
 
 
 def get_unique_ssid(data):
@@ -106,6 +150,7 @@ authmode_choices = {
     3: "WPA2-PSK",
     4: "WPA/WPA2-PSK",
 }
+changes = False
 
 # Start
 init_core()
@@ -133,7 +178,7 @@ sta.active(True)
 core_printlistln("done")
 time.sleep(2)
 new_stations = set()
-new_stations_buffer = set()
+new_stations_session_buffer = set()
 
 
 while True:
@@ -141,8 +186,11 @@ while True:
     familiar_stations = (
         set()
     )  # resetting the new stations list (buffer will come later)
+    new_stations = set()
 
     for station in current_scan:
+        nr_familiar_statons_buffer = len(familiar_stations)
+        nr_new_stations_buffer = len(new_stations)
         ssid = station[0].decode()
         bssid = ubinascii.hexlify(station[1]).decode()
         channel = station[2]
@@ -153,7 +201,7 @@ while True:
         unique_ssid.add(ssid)
 
         # Make sure to keep new stations in the list if they have not dissapeared
-        if bssid in new_stations_buffer:
+        if bssid in new_stations_session_buffer:
             new_stations.add(bssid)
 
         if not stations_db.get(bssid):
@@ -166,18 +214,31 @@ while True:
                 "count": count,
                 "devID": devid,
             }
+            core_notification("saving")
             write_json(stations_filename, stations_db)
+            core_notification("saving")
             new_stations.add(ssid)
-            new_stations_buffer = new_stations
+            new_stations_session_buffer = new_stations
+            changes = True
         else:
-            familiar_stations.add(ssid)
+            if ssid in new_stations_session_buffer:
+                new_stations.add(ssid)
+            else:
+                familiar_stations.add(ssid)
+            if (
+                len(familiar_stations) != nr_familiar_statons_buffer
+                or len(new_stations) != nr_new_stations_buffer
+            ):
+                changes = True
 
     # now draw it
-    draw_core2(stations_db, new_stations, familiar_stations, unique_ssid)
+    if changes:
+        draw_core2(stations_db, new_stations, familiar_stations, unique_ssid)
     # def is_highspeed():
     # return True if power.getChargeState() == 1 or power.getBatVoltage() > 4 else False
-    if power.getChargeState():
-        core_mark_power()
-        time.sleep(2)
-    else:
-        time.sleep(5)
+    # if devmodel == "M5Core2":
+    #     core2_sleep()
+    # if devmodel == "M5Fire":
+    #     fire_sleep()
+
+    core2_sleep()

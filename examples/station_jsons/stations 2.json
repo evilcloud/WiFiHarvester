@@ -1,0 +1,2585 @@
+{
+    "30230310d719": {
+        "ssid": "Linksys13570",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 239,
+        "bssid": "30230310d719"
+    },
+    "24792aad3128": {
+        "ssid": "KMB Free",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "24792aad3128",
+        "channel": 11,
+        "count": 6
+    },
+    "803f5dacd36b": {
+        "ssid": "Chans family",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 242,
+        "bssid": "803f5dacd36b"
+    },
+    "0c54a536c053": {
+        "ssid": "i-Cable-584305",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 244,
+        "bssid": "0c54a536c053"
+    },
+    "14aedbbb3a7a": {
+        "ssid": "ludako",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "14aedbbb3a7a",
+        "channel": 2,
+        "count": 11
+    },
+    "24f5a2ef5841": {
+        "ssid": "Kan",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a2ef5841",
+        "channel": 6,
+        "count": 170
+    },
+    "24f5a2b2b079": {
+        "ssid": "Fanny home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a2b2b079",
+        "channel": 11,
+        "count": 99
+    },
+    "98dac40302b3": {
+        "ssid": "TP-Link_02B4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "98dac40302b3",
+        "channel": 2,
+        "count": 47
+    },
+    "00265af1fb09": {
+        "ssid": "TOM",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "00265af1fb09",
+        "channel": 4,
+        "count": 150
+    },
+    "b6395670dd7e": {
+        "ssid": "Kero",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b6395670dd7e",
+        "channel": 13,
+        "count": 93
+    },
+    "d847328533b7": {
+        "ssid": "TP-Link_33B8",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 241,
+        "bssid": "d847328533b7"
+    },
+    "7c2ebd725cfc": {
+        "ssid": "TOMANCHEONG",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 245,
+        "bssid": "7c2ebd725cfc"
+    },
+    "a49b4fc904f0": {
+        "ssid": "PINGPONG",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 246,
+        "bssid": "a49b4fc904f0"
+    },
+    "c6f54720e155": {
+        "ssid": "Jelly",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c6f54720e155",
+        "channel": 6,
+        "count": 199
+    },
+    "6045cb5c1218": {
+        "ssid": "wireless4home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6045cb5c1218",
+        "channel": 8,
+        "count": 89
+    },
+    "58ef6858a251": {
+        "ssid": "LMC_Wifi24",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "58ef6858a251",
+        "channel": 1,
+        "count": 167
+    },
+    "24f5a28680c7": {
+        "ssid": "k-home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a28680c7",
+        "channel": 4,
+        "count": 182
+    },
+    "ee9f8062a599": {
+        "ssid": "hshguest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "ee9f8062a599",
+        "channel": 7,
+        "count": 44
+    },
+    "48ee0c415898": {
+        "ssid": "Home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "48ee0c415898",
+        "channel": 11,
+        "count": 193
+    },
+    "d017c2631db8": {
+        "ssid": "ASUS",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "d017c2631db8",
+        "channel": 1,
+        "count": 188
+    },
+    "c46e7b77b846": {
+        "ssid": "BRAUN I520WF 3d0790",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c46e7b77b846",
+        "channel": 6,
+        "count": 84
+    },
+    "e4c32a4803e5": {
+        "ssid": "TP-Link_03E5",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "e4c32a4803e5",
+        "channel": 8,
+        "count": 36
+    },
+    "d8fee37455be": {
+        "ssid": "olivia",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 2,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 225,
+        "bssid": "d8fee37455be"
+    },
+    "98dac4dc7986": {
+        "ssid": "leunghome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "98dac4dc7986",
+        "channel": 7,
+        "count": 50
+    },
+    "6032b1346e32": {
+        "ssid": "OGWNTWK",
+        "devID": "M5C2.kg.01",
+        "authmode": null,
+        "hidden": false,
+        "bssid": "6032b1346e32",
+        "channel": 3,
+        "count": 76
+    },
+    "24f5a2b28c29": {
+        "ssid": "TP-LINK-FE9376",
+        "authmode": "WPA2-PSK",
+        "channel": 3,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 228,
+        "bssid": "24f5a2b28c29"
+    },
+    "c4e90ae2b102": {
+        "ssid": "dlink-B101",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4e90ae2b102",
+        "channel": 9,
+        "count": 116
+    },
+    "149182909cc0": {
+        "ssid": "Chingyi1",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 240,
+        "bssid": "149182909cc0"
+    },
+    "305a3ac645f0": {
+        "ssid": "boxerspirit",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "305a3ac645f0",
+        "channel": 11,
+        "count": 90
+    },
+    "5c78f8fd292d": {
+        "ssid": "HUAWEI-10G43T_Wi-Fi5",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 222,
+        "bssid": "5c78f8fd292d"
+    },
+    "6032b13473fe": {
+        "ssid": "Chow Home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6032b13473fe",
+        "channel": 7,
+        "count": 14
+    },
+    "b0f893b7cd4c": {
+        "ssid": "PHILIPS Setup",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "b0f893b7cd4c",
+        "channel": 6,
+        "count": 106
+    },
+    "14918278e10b": {
+        "ssid": "Linksys00177",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "14918278e10b",
+        "channel": 11,
+        "count": 41
+    },
+    "84183a644bd9": {
+        "ssid": "Pacific Coffee",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "84183a644bd9",
+        "channel": 6,
+        "count": 166
+    },
+    "50c7bf57f894": {
+        "ssid": "TP-LINK_F894",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "50c7bf57f894",
+        "channel": 11,
+        "count": 140
+    },
+    "4cedfba426c8": {
+        "ssid": "Yes Sir Club",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 248,
+        "bssid": "4cedfba426c8"
+    },
+    "b04e264cbf78": {
+        "ssid": "HO's KITCHEN K",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 254,
+        "bssid": "b04e264cbf78"
+    },
+    "001daa494480": {
+        "ssid": "Staff",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 255,
+        "bssid": "001daa494480"
+    },
+    "84d81b5dd336": {
+        "ssid": "Liktung",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "84d81b5dd336",
+        "channel": 2,
+        "count": 16
+    },
+    "d847327c3b4e": {
+        "ssid": "pangng",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d847327c3b4e",
+        "channel": 8,
+        "count": 181
+    },
+    "c4411e77a298": {
+        "ssid": "Garrick",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4411e77a298",
+        "channel": 10,
+        "count": 211
+    },
+    "640980702ae8": {
+        "ssid": "Yuen Home",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 3,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 226,
+        "bssid": "640980702ae8"
+    },
+    "3623031b7a3a": {
+        "ssid": "Pikachu_guest",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 230,
+        "bssid": "3623031b7a3a"
+    },
+    "240588241316": {
+        "ssid": "leung",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "240588241316",
+        "channel": 11,
+        "count": 80
+    },
+    "50c7bf207f20": {
+        "ssid": "HO's KITCHEN R",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 236,
+        "bssid": "50c7bf207f20"
+    },
+    "98dac4f0e8d5": {
+        "ssid": "Michael",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 5,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 251,
+        "bssid": "98dac4f0e8d5"
+    },
+    "c468d064f8bb": {
+        "ssid": "NETGEAR10",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c468d064f8bb",
+        "channel": 7,
+        "count": 200
+    },
+    "d45d64e65970": {
+        "ssid": "JAPFAMILY_2G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "d45d64e65970",
+        "channel": 13,
+        "count": 42
+    },
+    "be39566fd8ee": {
+        "ssid": "Tortoise Sand Network-Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "be39566fd8ee",
+        "channel": 13,
+        "count": 171
+    },
+    "384b5033f9ce": {
+        "ssid": "eye3",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "384b5033f9ce",
+        "channel": 6,
+        "count": 55
+    },
+    "a0f3c149810a": {
+        "ssid": "pat'swifi",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 256,
+        "bssid": "a0f3c149810a"
+    },
+    "3497f63f3c7c": {
+        "ssid": "QBEASY",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 232,
+        "bssid": "3497f63f3c7c"
+    },
+    "54a050d0cf60": {
+        "ssid": "Dennis24G",
+        "authmode": "WPA2-PSK",
+        "channel": 3,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 260,
+        "bssid": "54a050d0cf60"
+    },
+    "f430b900dc7d": {
+        "ssid": "DIRECT-7C-HP ENVY 5640 series",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f430b900dc7d",
+        "channel": 11,
+        "count": 48
+    },
+    "24792a29c398": {
+        "ssid": "Haymarket_Laptop",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 261,
+        "bssid": "24792a29c398"
+    },
+    "04d4c445f8e1": {
+        "ssid": "AY-S",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d4c445f8e1",
+        "channel": 7,
+        "count": 113
+    },
+    "b0be76c972bf": {
+        "ssid": "SC Sweet Home",
+        "authmode": "WPA2-PSK",
+        "channel": 10,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 253,
+        "bssid": "b0be76c972bf"
+    },
+    "24f5a22ed159": {
+        "ssid": "sky",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a22ed159",
+        "channel": 6,
+        "count": 21
+    },
+    "14cc20e12db0": {
+        "ssid": "smartwatch",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "14cc20e12db0",
+        "channel": 6,
+        "count": 97
+    },
+    "3023031b7a3a": {
+        "ssid": "Pikachu",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 263,
+        "bssid": "3023031b7a3a"
+    },
+    "409bcd3e63ec": {
+        "ssid": "dlink-63EC",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 267,
+        "bssid": "409bcd3e63ec"
+    },
+    "d88adcf210c0": {
+        "ssid": "mumuma2",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 268,
+        "bssid": "d88adcf210c0"
+    },
+    "c83a35906791": {
+        "ssid": "knightkiller38",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 7,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 269,
+        "bssid": "c83a35906791"
+    },
+    "6045cb656d18": {
+        "ssid": "ASUS",
+        "authmode": "WPA2-PSK",
+        "channel": 9,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 273,
+        "bssid": "6045cb656d18"
+    },
+    "d46e0e4cf4f6": {
+        "ssid": "TP-LINK_F4F6",
+        "authmode": "WPA2-PSK",
+        "channel": 3,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 278,
+        "bssid": "d46e0e4cf4f6"
+    },
+    "c23d031f03ef": {
+        "ssid": "Galaxy A42 5G43EF",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c23d031f03ef",
+        "channel": 2,
+        "count": 168
+    },
+    "9c9d7e7500b2": {
+        "ssid": "Kiara",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "9c9d7e7500b2",
+        "channel": 1,
+        "count": 115
+    },
+    "480eec38ba01": {
+        "ssid": "MiMesh_RICKY",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "480eec38ba01",
+        "channel": 9,
+        "count": 88
+    },
+    "0836c9795233": {
+        "ssid": "26G Home 5G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0836c9795233",
+        "channel": 13,
+        "count": 87
+    },
+    "803f5db60a6c": {
+        "ssid": "belkin.4c48",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "803f5db60a6c",
+        "channel": 1,
+        "count": 53
+    },
+    "c0517e6e8c0a": {
+        "ssid": "NVRF06049939",
+        "authmode": "WPA2-PSK",
+        "channel": 13,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 279,
+        "bssid": "c0517e6e8c0a"
+    },
+    "3e94ed0fb5db": {
+        "ssid": "SuperLawHome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "3e94ed0fb5db",
+        "channel": 13,
+        "count": 91
+    },
+    "244bfee3c228": {
+        "ssid": "Boxful Self-Service Lockers",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 281,
+        "bssid": "244bfee3c228"
+    },
+    "d45d644cbbe0": {
+        "ssid": "asia",
+        "authmode": "WPA2-PSK",
+        "channel": 10,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 282,
+        "bssid": "d45d644cbbe0"
+    },
+    "f63909fea84b": {
+        "ssid": "DIRECT-4B-HP OfficeJet 5200",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 283,
+        "bssid": "f63909fea84b"
+    },
+    "b0e4d51866ba": {
+        "ssid": "Gundam Fans",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b0e4d51866ba",
+        "channel": 6,
+        "count": 74
+    },
+    "c025e98547dc": {
+        "ssid": "TP-LINK_47DC",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 284,
+        "bssid": "c025e98547dc"
+    },
+    "c469d064f8bb": {
+        "ssid": "HKBN-64F8BA-Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c469d064f8bb",
+        "channel": 7,
+        "count": 201
+    },
+    "3c846a477ed8": {
+        "ssid": "DC3",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 285,
+        "bssid": "3c846a477ed8"
+    },
+    "18a6f705d3c2": {
+        "ssid": "TP-LINK_D3C2",
+        "authmode": "WPA2-PSK",
+        "channel": 10,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 229,
+        "bssid": "18a6f705d3c2"
+    },
+    "38ff36ae2bd8": {
+        "ssid": "Haymarket-Guests",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 286,
+        "bssid": "38ff36ae2bd8"
+    },
+    "42b034761344": {
+        "ssid": "DIRECT-44-HP OfficeJet Pro 7740",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "42b034761344",
+        "channel": 3,
+        "count": 143
+    },
+    "64a5c36910c4": {
+        "ssid": "「WUNHON」的 網路",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "64a5c36910c4",
+        "channel": 11,
+        "count": 122
+    },
+    "f832e45062d0": {
+        "ssid": "TOBY ",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f832e45062d0",
+        "channel": 11,
+        "count": 107
+    },
+    "184b0dbf2868": {
+        "ssid": "JEB-Media",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "184b0dbf2868",
+        "channel": 6,
+        "count": 128
+    },
+    "001add4b2ea6": {
+        "ssid": "Guest Wifi",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "001add4b2ea6",
+        "channel": 6,
+        "count": 22
+    },
+    "fceee63ebdef": {
+        "ssid": "Z320-3EBDEF_2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "fceee63ebdef",
+        "channel": 6,
+        "count": 67
+    },
+    "c8eea609aa81": {
+        "ssid": "_FREE_AdWiFi",
+        "authmode": "open",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 214,
+        "bssid": "c8eea609aa81"
+    },
+    "f428538074d6": {
+        "ssid": "House of Blues",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f428538074d6",
+        "channel": 11,
+        "count": 24
+    },
+    "5c78f8dd2928": {
+        "ssid": "HUAWEI-10G43T",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "5c78f8dd2928",
+        "channel": 1,
+        "count": 103
+    },
+    "04d4c4430ca1": {
+        "ssid": "KN-GUEST",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d4c4430ca1",
+        "channel": 9,
+        "count": 45
+    },
+    "04d4c44581b8": {
+        "ssid": "King Robinson",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d4c44581b8",
+        "channel": 10,
+        "count": 15
+    },
+    "a2c9eb28f4d9": {
+        "ssid": "ORBI-router-Yip's",
+        "authmode": "WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 250,
+        "bssid": "a2c9eb28f4d9"
+    },
+    "f428537da938": {
+        "ssid": "TOTOLINK_A3",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "f428537da938",
+        "channel": 1,
+        "count": 197
+    },
+    "0031922a4506": {
+        "ssid": "WingTung",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0031922a4506",
+        "channel": 2,
+        "count": 63
+    },
+    "68ff7b262896": {
+        "ssid": "chuenki",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "68ff7b262896",
+        "channel": 2,
+        "count": 66
+    },
+    "286c079c4bf2": {
+        "ssid": "leedyw_N",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "286c079c4bf2",
+        "channel": 2,
+        "count": 13
+    },
+    "b83a084073b1": {
+        "ssid": "SAM-2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "b83a084073b1",
+        "channel": 3,
+        "count": 23
+    },
+    "2af5a2aec0e7": {
+        "ssid": "Sham-guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "2af5a2aec0e7",
+        "channel": 9,
+        "count": 174
+    },
+    "94e4baf7184d": {
+        "ssid": "Francis n Venus_Wi-Fi5",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "94e4baf7184d",
+        "channel": 1,
+        "count": 81
+    },
+    "e89f8062a5a8": {
+        "ssid": "homesweethome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f8062a5a8",
+        "channel": 5,
+        "count": 30
+    },
+    "184b0d7f2868": {
+        "ssid": "JEB-Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "184b0d7f2868",
+        "channel": 6,
+        "count": 127
+    },
+    "bc5ff61a307e": {
+        "ssid": "YukHome-Wifi",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "bc5ff61a307e",
+        "channel": 1,
+        "count": 178
+    },
+    "04d4c4457f39": {
+        "ssid": "King Robinson",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d4c4457f39",
+        "channel": 9,
+        "count": 26
+    },
+    "0c8063256c6d": {
+        "ssid": "BP_450",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c8063256c6d",
+        "channel": 1,
+        "count": 187
+    },
+    "5ebaba87c304": {
+        "ssid": "ST Google WiFi",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "5ebaba87c304",
+        "channel": 13,
+        "count": 120
+    },
+    "6c709fde0814": {
+        "ssid": "Kappa's Network",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6c709fde0814",
+        "channel": 1,
+        "count": 141
+    },
+    "58ef682ea5ff": {
+        "ssid": "limsys",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "58ef682ea5ff",
+        "channel": 11,
+        "count": 86
+    },
+    "c83a35461681": {
+        "ssid": "Daniel",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c83a35461681",
+        "channel": 13,
+        "count": 94
+    },
+    "50c7bff9d067": {
+        "ssid": "CPTGC",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "50c7bff9d067",
+        "channel": 2,
+        "count": 33
+    },
+    "6238e0dc2745": {
+        "ssid": "Linksys00664-guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "6238e0dc2745",
+        "channel": 9,
+        "count": 180
+    },
+    "a85e45aef300": {
+        "ssid": "Panda_Home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "a85e45aef300",
+        "channel": 10,
+        "count": 5
+    },
+    "100c6b45a6b8": {
+        "ssid": "Teren_TPLINK",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "100c6b45a6b8",
+        "channel": 13,
+        "count": 173
+    },
+    "1cbfce2efece": {
+        "ssid": "IROAD_X5_2EFECE",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "1cbfce2efece",
+        "channel": 6,
+        "count": 161
+    },
+    "7ed294b08d32": {
+        "ssid": "ORBI55",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "7ed294b08d32",
+        "channel": 13,
+        "count": 28
+    },
+    "c83a353e5f04": {
+        "ssid": "abc",
+        "authmode": "WPA-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 231,
+        "bssid": "c83a353e5f04"
+    },
+    "203233baccb6": {
+        "ssid": "vYou_UZ2341",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "203233baccb6",
+        "channel": 4,
+        "count": 210
+    },
+    "0836c9e927c9": {
+        "ssid": "GFY@HK2.4",
+        "devID": "M5C2.kg.01",
+        "authmode": null,
+        "hidden": false,
+        "bssid": "0836c9e927c9",
+        "channel": 7,
+        "count": 144
+    },
+    "307496cd695d": {
+        "ssid": "Telenor 4G-695D",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "307496cd695d",
+        "channel": 1,
+        "count": 156
+    },
+    "0c80639a56a6": {
+        "ssid": "SD_hm_mrm2",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c80639a56a6",
+        "channel": 8,
+        "count": 75
+    },
+    "6038e0ada078": {
+        "ssid": "maryoch",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6038e0ada078",
+        "channel": 8,
+        "count": 186
+    },
+    "e03f490c9270": {
+        "ssid": "LUI-HOME-MGMT",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e03f490c9270",
+        "channel": 1,
+        "count": 203
+    },
+    "e865d40c9ec1": {
+        "ssid": "Lee Home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "e865d40c9ec1",
+        "channel": 10,
+        "count": 148
+    },
+    "0492266d2130": {
+        "ssid": "CityHunter323",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0492266d2130",
+        "channel": 11,
+        "count": 27
+    },
+    "246968cd7200": {
+        "ssid": "billy eng",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "246968cd7200",
+        "channel": 6,
+        "count": 183
+    },
+    "74ee2a187082": {
+        "ssid": "vYou_DDPai_X2Pro-SD5095",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "74ee2a187082",
+        "channel": 4,
+        "count": 96
+    },
+    "c056275115e3": {
+        "ssid": "PRI-24",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c056275115e3",
+        "channel": 11,
+        "count": 123
+    },
+    "149182b0ba1f": {
+        "ssid": "linksysyoung",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "149182b0ba1f",
+        "channel": 2,
+        "count": 105
+    },
+    "8cbebe2cc172": {
+        "ssid": "Magashine",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "8cbebe2cc172",
+        "channel": 1,
+        "count": 10
+    },
+    "c4411e9a10db": {
+        "ssid": "Joyce & TC",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4411e9a10db",
+        "channel": 10,
+        "count": 114
+    },
+    "909a4a10576d": {
+        "ssid": "TP-Link_576D",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "909a4a10576d",
+        "channel": 7,
+        "count": 51
+    },
+    "e865d40c91c1": {
+        "ssid": "Tenda_0C91C0",
+        "authmode": "open",
+        "channel": 5,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 220,
+        "bssid": "e865d40c91c1"
+    },
+    "c4411ee55b63": {
+        "ssid": "Ryan Chan",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4411ee55b63",
+        "channel": 10,
+        "count": 68
+    },
+    "5c78f8f8d9e5": {
+        "ssid": "Alan-HUAWEI-G10FD4_Wi-Fi5",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "5c78f8f8d9e5",
+        "channel": 1,
+        "count": 32
+    },
+    "6e32b1855f6a": {
+        "ssid": "ShelleyChan",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "6e32b1855f6a",
+        "channel": 4,
+        "count": 194
+    },
+    "24f5a2c41881": {
+        "ssid": "GreenH",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a2c41881",
+        "channel": 1,
+        "count": 175
+    },
+    "38ff366e2bd8": {
+        "ssid": "Haymarket-Smartphone",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "38ff366e2bd8",
+        "channel": 1,
+        "count": 104
+    },
+    "c8b5ad8700e1": {
+        "ssid": "QB-Guest-WIFI",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c8b5ad8700e1",
+        "channel": 1,
+        "count": 131
+    },
+    "84183ae44bd8": {
+        "ssid": "CSL Wi-Fi Roam",
+        "devID": "M5C2.kg.01",
+        "authmode": null,
+        "hidden": false,
+        "bssid": "84183ae44bd8",
+        "channel": 6,
+        "count": 165
+    },
+    "c8b5ad8700e0": {
+        "ssid": "QB-TD-WIFI",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c8b5ad8700e0",
+        "channel": 1,
+        "count": 142
+    },
+    "cc32e5e37b66": {
+        "ssid": "m&m",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "cc32e5e37b66",
+        "channel": 4,
+        "count": 73
+    },
+    "c4411e2108ee": {
+        "ssid": "splendid2",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4411e2108ee",
+        "channel": 5,
+        "count": 202
+    },
+    "40313c038dfd": {
+        "ssid": "Monster yoyo",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "40313c038dfd",
+        "channel": 2,
+        "count": 54
+    },
+    "e4c32a29523b": {
+        "ssid": "Vincent Home WIFI 2G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "e4c32a29523b",
+        "channel": 2,
+        "count": 49
+    },
+    "58d56e95270c": {
+        "ssid": "Kam Fung",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 234,
+        "bssid": "58d56e95270c"
+    },
+    "0c80636d7f9a": {
+        "ssid": "Ho’s Kitchen ",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 235,
+        "bssid": "0c80636d7f9a"
+    },
+    "04d4c4464e90": {
+        "ssid": "1807",
+        "authmode": "WPA2-PSK",
+        "channel": 10,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 249,
+        "bssid": "04d4c4464e90"
+    },
+    "74da889b69b3": {
+        "ssid": "TP-Link_69B4",
+        "authmode": "WPA2-PSK",
+        "channel": 2,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 216,
+        "bssid": "74da889b69b3"
+    },
+    "6638e0958379": {
+        "ssid": "Linksys01207-访客",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "6638e0958379",
+        "channel": 12,
+        "count": 61
+    },
+    "d46e0eb24ccd": {
+        "ssid": "Family 2.4g",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d46e0eb24ccd",
+        "channel": 1,
+        "count": 77
+    },
+    "84d81b3a1b56": {
+        "ssid": "CHUNG",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "84d81b3a1b56",
+        "channel": 8,
+        "count": 95
+    },
+    "5ebaba87bffc": {
+        "ssid": "ST Google WiFi",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 265,
+        "bssid": "5ebaba87bffc"
+    },
+    "2823f5bfe018": {
+        "ssid": "CMHK-gf6T",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "2823f5bfe018",
+        "channel": 11,
+        "count": 60
+    },
+    "bc0f9a667e35": {
+        "ssid": "dlink-7E34",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "bc0f9a667e35",
+        "channel": 2,
+        "count": 12
+    },
+    "244bfe125b51": {
+        "ssid": "Apple Storage",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 266,
+        "bssid": "244bfe125b51"
+    },
+    "6032b134743a": {
+        "ssid": "Arnold Home",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 219,
+        "bssid": "6032b134743a"
+    },
+    "f42853fe0684": {
+        "ssid": "Doraemon",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 7,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 271,
+        "bssid": "f42853fe0684"
+    },
+    "3023036ec331": {
+        "ssid": "tony",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "3023036ec331",
+        "channel": 5,
+        "count": 208
+    },
+    "6038e0aad3bd": {
+        "ssid": "123456",
+        "authmode": "WPA2-PSK",
+        "channel": 9,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 252,
+        "bssid": "6038e0aad3bd"
+    },
+    "04d4c42f3e74": {
+        "ssid": "spaceadmin",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 223,
+        "bssid": "04d4c42f3e74"
+    },
+    "c468d0594452": {
+        "ssid": "Ho s Family",
+        "authmode": "WPA2-PSK",
+        "channel": 7,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 259,
+        "bssid": "c468d0594452"
+    },
+    "f07959780dc9": {
+        "ssid": "ASUS_Guest1",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f07959780dc9",
+        "channel": 12,
+        "count": 121
+    },
+    "f07959780dc8": {
+        "ssid": "ASUS",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f07959780dc8",
+        "channel": 12,
+        "count": 119
+    },
+    "f09fc22d37ff": {
+        "ssid": "AnpakAir",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 217,
+        "bssid": "f09fc22d37ff"
+    },
+    "d8473255816e": {
+        "ssid": "TP-Link_Extender",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA-PSK",
+        "hidden": false,
+        "bssid": "d8473255816e",
+        "channel": 2,
+        "count": 176
+    },
+    "38d547217690": {
+        "ssid": "ASUS IP FAMILY",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "38d547217690",
+        "channel": 2,
+        "count": 198
+    },
+    "e89f80db5279": {
+        "ssid": "NG HOME",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f80db5279",
+        "channel": 6,
+        "count": 2
+    },
+    "6038e078b192": {
+        "ssid": "EA9500",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 264,
+        "bssid": "6038e078b192"
+    },
+    "f09fc22d48f2": {
+        "ssid": "AnpakAir",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 270,
+        "bssid": "f09fc22d48f2"
+    },
+    "14aedbbbf7b2": {
+        "ssid": "HKBN-BBF7B1",
+        "authmode": "WPA2-PSK",
+        "channel": 5,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 272,
+        "bssid": "14aedbbbf7b2"
+    },
+    "146b9c263524": {
+        "ssid": "vYou_PA4202",
+        "authmode": "WPA2-PSK",
+        "channel": 4,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 274,
+        "bssid": "146b9c263524"
+    },
+    "e89f8062a599": {
+        "ssid": "homesweethome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f8062a599",
+        "channel": 7,
+        "count": 8
+    },
+    "f0b42917faa1": {
+        "ssid": "40342",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "f0b42917faa1",
+        "channel": 11,
+        "count": 38
+    },
+    "6003473ed99c": {
+        "ssid": ".WiFiBus.",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "6003473ed99c",
+        "channel": 4,
+        "count": 0
+    },
+    "d84732416b3a": {
+        "ssid": "wong",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d84732416b3a",
+        "channel": 7,
+        "count": 65
+    },
+    "24f5a2ef5763": {
+        "ssid": "HeHeHe",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a2ef5763",
+        "channel": 5,
+        "count": 184
+    },
+    "d847329dc0b6": {
+        "ssid": "cheung wifi",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d847329dc0b6",
+        "channel": 10,
+        "count": 82
+    },
+    "c4411e7d3b51": {
+        "ssid": "M&C Home",
+        "authmode": "WPA2-PSK",
+        "channel": 7,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 276,
+        "bssid": "c4411e7d3b51"
+    },
+    "b0be76d758b6": {
+        "ssid": "My Auntie",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "b0be76d758b6",
+        "channel": 10,
+        "count": 85
+    },
+    "b4cd2799ea89": {
+        "ssid": "HKHS",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b4cd2799ea89",
+        "channel": 9,
+        "count": 154
+    },
+    "14cc20e5fd9d": {
+        "ssid": "WSWLAN",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 277,
+        "bssid": "14cc20e5fd9d"
+    },
+    "c05627bbed00": {
+        "ssid": "4Cats_Staff",
+        "authmode": "WPA2-PSK",
+        "channel": 9,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 212,
+        "bssid": "c05627bbed00"
+    },
+    "0e806315413a": {
+        "ssid": "HIPARK Staff",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "0e806315413a",
+        "channel": 1,
+        "count": 157
+    },
+    "24f5a27863d1": {
+        "ssid": "eggtang",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a27863d1",
+        "channel": 4,
+        "count": 64
+    },
+    "2823f5bfacf0": {
+        "ssid": "wong-family",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "2823f5bfacf0",
+        "channel": 11,
+        "count": 25
+    },
+    "1cbfce570719": {
+        "ssid": "IROAD_X9_570719",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "1cbfce570719",
+        "channel": 6,
+        "count": 207
+    },
+    "f4f26d6f1858": {
+        "ssid": "Yiu",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "f4f26d6f1858",
+        "channel": 8,
+        "count": 151
+    },
+    "68ff7be57cd2": {
+        "ssid": "DaiDeco",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 8,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 258,
+        "bssid": "68ff7be57cd2"
+    },
+    "803f5dfeaf09": {
+        "ssid": "Helen Lam-N",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 4,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 233,
+        "bssid": "803f5dfeaf09"
+    },
+    "d45d644d3071": {
+        "ssid": "asia",
+        "authmode": "WPA2-PSK",
+        "channel": 10,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 280,
+        "bssid": "d45d644d3071"
+    },
+    "708bcdb224b0": {
+        "ssid": "ASUS",
+        "authmode": "WPA2-PSK",
+        "channel": 5,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 275,
+        "bssid": "708bcdb224b0"
+    },
+    "3e94edd28491": {
+        "ssid": "SJHome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "3e94edd28491",
+        "channel": 13,
+        "count": 92
+    },
+    "e89f80664078": {
+        "ssid": "chel family",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f80664078",
+        "channel": 7,
+        "count": 109
+    },
+    "50c7bf1fa77c": {
+        "ssid": "HO's KITCHEN_GUEST",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 238,
+        "bssid": "50c7bf1fa77c"
+    },
+    "04d9f5b47400": {
+        "ssid": "ssid",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d9f5b47400",
+        "channel": 7,
+        "count": 101
+    },
+    "24792aa9c398": {
+        "ssid": "Haymarket-Guests",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 262,
+        "bssid": "24792aa9c398"
+    },
+    "98dac457c0a5": {
+        "ssid": "TP-Link_02B4_5G_2.4GEXT",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "98dac457c0a5",
+        "channel": 2,
+        "count": 72
+    },
+    "1831bf3f86b0": {
+        "ssid": "PatrickR-2.4G",
+        "authmode": "WPA2-PSK",
+        "channel": 4,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 247,
+        "bssid": "1831bf3f86b0"
+    },
+    "08107778b3bf": {
+        "ssid": "taikoops_4G",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 227,
+        "bssid": "08107778b3bf"
+    },
+    "40313c9de99a": {
+        "ssid": "HomeSweetHomeMasterRM",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "40313c9de99a",
+        "channel": 13,
+        "count": 39
+    },
+    "3c846a096c33": {
+        "ssid": "SuSuShi 2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "3c846a096c33",
+        "channel": 7,
+        "count": 102
+    },
+    "28ee529f698c": {
+        "ssid": "Patrick TP",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "28ee529f698c",
+        "channel": 11,
+        "count": 40
+    },
+    "f428537981d2": {
+        "ssid": "shelleydavid2",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "f428537981d2",
+        "channel": 11,
+        "count": 196
+    },
+    "24792a69c398": {
+        "ssid": "Haymarket-Smartphone",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 257,
+        "bssid": "24792a69c398"
+    },
+    "b639566fd8ee": {
+        "ssid": "Tortoise Sand Network",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b639566fd8ee",
+        "channel": 13,
+        "count": 172
+    },
+    "ee9f8062a5a8": {
+        "ssid": "hshguest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "ee9f8062a5a8",
+        "channel": 5,
+        "count": 17
+    },
+    "4cb1cd3dd7a8": {
+        "ssid": "nrhk_i",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "4cb1cd3dd7a8",
+        "channel": 7,
+        "count": 147
+    },
+    "0836c979526f": {
+        "ssid": "26G Home 5G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0836c979526f",
+        "channel": 13,
+        "count": 37
+    },
+    "dead0aa840ff": {
+        "ssid": "kittybly",
+        "authmode": "WPA2-PSK",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 243,
+        "bssid": "dead0aa840ff"
+    },
+    "06d4c43f3e74": {
+        "ssid": "SpaceStore_Guest",
+        "authmode": "WPA2-PSK",
+        "channel": 11,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 221,
+        "bssid": "06d4c43f3e74"
+    },
+    "803f5dd61451": {
+        "ssid": "Eat_Kitchen_2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "803f5dd61451",
+        "channel": 1,
+        "count": 177
+    },
+    "c468d08204b8": {
+        "ssid": "HKBN-8204B4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c468d08204b8",
+        "channel": 1,
+        "count": 69
+    },
+    "803f5d3def5e": {
+        "ssid": "i-SQUARE_Ltd",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "803f5d3def5e",
+        "channel": 5,
+        "count": 153
+    },
+    "a0d807f31f25": {
+        "ssid": "HUAWEI Y9s",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "a0d807f31f25",
+        "channel": 11,
+        "count": 155
+    },
+    "6038e0aacddc": {
+        "ssid": "tony",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6038e0aacddc",
+        "channel": 10,
+        "count": 43
+    },
+    "24f5a28682d1": {
+        "ssid": "k-home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a28682d1",
+        "channel": 7,
+        "count": 190
+    },
+    "1cb72c746fb8": {
+        "ssid": "tszfung",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "1cb72c746fb8",
+        "channel": 11,
+        "count": 19
+    },
+    "04f938218865": {
+        "ssid": "guohome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04f938218865",
+        "channel": 6,
+        "count": 78
+    },
+    "24792a6d3128": {
+        "ssid": "CSL",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "24792a6d3128",
+        "channel": 11,
+        "count": 9
+    },
+    "a263911ef4fe": {
+        "ssid": "sanodance-Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "a263911ef4fe",
+        "channel": 5,
+        "count": 130
+    },
+    "24f5a2577a57": {
+        "ssid": "FAN_2.4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a2577a57",
+        "channel": 5,
+        "count": 111
+    },
+    "60e3272a1ed2": {
+        "ssid": "TP-LINK_1ED2",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "60e3272a1ed2",
+        "channel": 7,
+        "count": 58
+    },
+    "04d9f5b55e80": {
+        "ssid": "Asus-asus",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "04d9f5b55e80",
+        "channel": 5,
+        "count": 4
+    },
+    "d076e731aa9c": {
+        "ssid": "TP-LINK_AA9C",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d076e731aa9c",
+        "channel": 11,
+        "count": 110
+    },
+    "60e327af713d": {
+        "ssid": "dickyto 2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "60e327af713d",
+        "channel": 9,
+        "count": 56
+    },
+    "923bada68672": {
+        "ssid": "ORBI",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "923bada68672",
+        "channel": 4,
+        "count": 146
+    },
+    "98dac4dc8a7e": {
+        "ssid": "leunghome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "98dac4dc8a7e",
+        "channel": 7,
+        "count": 71
+    },
+    "e89f8021117c": {
+        "ssid": "peterlee",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f8021117c",
+        "channel": 5,
+        "count": 185
+    },
+    "1062eb95c938": {
+        "ssid": "FAQ",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "1062eb95c938",
+        "channel": 3,
+        "count": 126
+    },
+    "0c9d9248dfd0": {
+        "ssid": "R 2.4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c9d9248dfd0",
+        "channel": 3,
+        "count": 57
+    },
+    "caeea609aa81": {
+        "ssid": "_FREEAdWiFi_4CatsPantry",
+        "authmode": "open",
+        "channel": 1,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 213,
+        "bssid": "caeea609aa81"
+    },
+    "ac9e179322e8": {
+        "ssid": "BB_Home",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "ac9e179322e8",
+        "channel": 1,
+        "count": 1
+    },
+    "a063911ef4fd": {
+        "ssid": "sanodance",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "a063911ef4fd",
+        "channel": 5,
+        "count": 129
+    },
+    "84183aa44bd9": {
+        "ssid": "Universities via CSL",
+        "devID": "M5C2.kg.01",
+        "authmode": null,
+        "hidden": false,
+        "bssid": "84183aa44bd9",
+        "channel": 6,
+        "count": 70
+    },
+    "84183aa44bd8": {
+        "ssid": "CSL",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "84183aa44bd8",
+        "channel": 6,
+        "count": 164
+    },
+    "6c21a21f16d8": {
+        "ssid": "midr-cardvr-v1_midev16d8",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "6c21a21f16d8",
+        "channel": 1,
+        "count": 162
+    },
+    "703a0ee788e0": {
+        "ssid": "BEA Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "703a0ee788e0",
+        "channel": 1,
+        "count": 31
+    },
+    "2ce6cc696bb3": {
+        "ssid": "island-296BB0",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "2ce6cc696bb3",
+        "channel": 2,
+        "count": 191
+    },
+    "884477bd9494": {
+        "ssid": "Jasper",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "884477bd9494",
+        "channel": 11,
+        "count": 149
+    },
+    "ec086bbbf813": {
+        "ssid": "Tong2.4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "ec086bbbf813",
+        "channel": 11,
+        "count": 18
+    },
+    "14afdbbd0662": {
+        "ssid": "HKBN-BD0661-Guest",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "14afdbbd0662",
+        "channel": 9,
+        "count": 29
+    },
+    "908d7824c3d4": {
+        "ssid": "d217",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "908d7824c3d4",
+        "channel": 6,
+        "count": 35
+    },
+    "842e27dcafe7": {
+        "ssid": "AndroidAPAFE7",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "842e27dcafe7",
+        "channel": 6,
+        "count": 152
+    },
+    "b06ebfe266b8": {
+        "ssid": "Net1",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b06ebfe266b8",
+        "channel": 3,
+        "count": 159
+    },
+    "f81a675a7b3c": {
+        "ssid": "Babyroom",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "f81a675a7b3c",
+        "channel": 10,
+        "count": 135
+    },
+    "40b034dea436": {
+        "ssid": "DIRECT-35-HP ENVY 4520 series",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "40b034dea436",
+        "channel": 8,
+        "count": 192
+    },
+    "0c806315413a": {
+        "ssid": "HPL",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c806315413a",
+        "channel": 1,
+        "count": 158
+    },
+    "186472dde0c1": {
+        "ssid": "DBS_Guest_Wi-Fi-e",
+        "devID": "M5C2.kg.01",
+        "authmode": null,
+        "hidden": false,
+        "bssid": "186472dde0c1",
+        "channel": 11,
+        "count": 206
+    },
+    "186472dde0c0": {
+        "ssid": "DBS_Guest_Wi-Fi",
+        "devID": "M5C2.kg.01",
+        "authmode": "open",
+        "hidden": false,
+        "bssid": "186472dde0c0",
+        "channel": 11,
+        "count": 205
+    },
+    "38ff362e2bd8": {
+        "ssid": "Haymarket_Laptop",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "38ff362e2bd8",
+        "channel": 1,
+        "count": 136
+    },
+    "b04e2680b9cf": {
+        "ssid": "無法識別訊號",
+        "authmode": "WPA2-PSK",
+        "channel": 6,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 218,
+        "bssid": "b04e2680b9cf"
+    },
+    "38a28cfdcad1": {
+        "ssid": "MyDean 3e070f",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "38a28cfdcad1",
+        "channel": 6,
+        "count": 195
+    },
+    "1cbfce2f127c": {
+        "ssid": "IROAD_X5_2F127C",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "1cbfce2f127c",
+        "channel": 6,
+        "count": 160
+    },
+    "b04e26ad1fc8": {
+        "ssid": "TP-Link_1FC8",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "b04e26ad1fc8",
+        "channel": 11,
+        "count": 145
+    },
+    "6032b18567ce": {
+        "ssid": "ShelleyChan",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "6032b18567ce",
+        "channel": 4,
+        "count": 204
+    },
+    "244bfe621f38": {
+        "ssid": "madgroup24",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "244bfe621f38",
+        "channel": 3,
+        "count": 139
+    },
+    "48f8b350bf8d": {
+        "ssid": "MYCHK",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "48f8b350bf8d",
+        "channel": 1,
+        "count": 137
+    },
+    "24f5a286268b": {
+        "ssid": "Hin",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "24f5a286268b",
+        "channel": 5,
+        "count": 138
+    },
+    "0c8063fcfcb4": {
+        "ssid": "TP-LINK_FCB4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c8063fcfcb4",
+        "channel": 13,
+        "count": 118
+    },
+    "98dac4dc8d06": {
+        "ssid": "leunghome",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "98dac4dc8d06",
+        "channel": 7,
+        "count": 79
+    },
+    "e89f80663df3": {
+        "ssid": "chel family",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "e89f80663df3",
+        "channel": 3,
+        "count": 100
+    },
+    "3c1e040a5252": {
+        "ssid": "wmpo",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "3c1e040a5252",
+        "channel": 5,
+        "count": 34
+    },
+    "d017c2e16408": {
+        "ssid": "BW_ASUS",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "d017c2e16408",
+        "channel": 7,
+        "count": 163
+    },
+    "b6395670dcca": {
+        "ssid": "Kero",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "b6395670dcca",
+        "channel": 13,
+        "count": 117
+    },
+    "1c3bf3c89c42": {
+        "ssid": "KLwifi",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "1c3bf3c89c42",
+        "channel": 4,
+        "count": 112
+    },
+    "c471541ebd18": {
+        "ssid": "14582583AA",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c471541ebd18",
+        "channel": 9,
+        "count": 134
+    },
+    "c05627b9448a": {
+        "ssid": "Linksys00242",
+        "authmode": "WPA2-PSK",
+        "channel": 2,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 215,
+        "bssid": "c05627b9448a"
+    },
+    "c4ff1f5f1fc0": {
+        "ssid": "eskimo_2.4G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4ff1f5f1fc0",
+        "channel": 1,
+        "count": 132
+    },
+    "c4411eeb2df5": {
+        "ssid": "Yiu",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "c4411eeb2df5",
+        "channel": 5,
+        "count": 124
+    },
+    "0030441d941c": {
+        "ssid": "IBR600-41c",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "0030441d941c",
+        "channel": 13,
+        "count": 62
+    },
+    "0c9d92bb1ec0": {
+        "ssid": "ASUS_C0_2G",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c9d92bb1ec0",
+        "channel": 1,
+        "count": 209
+    },
+    "2c4d54025bd8": {
+        "ssid": "Carven",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "2c4d54025bd8",
+        "channel": 6,
+        "count": 108
+    },
+    "286c073278bc": {
+        "ssid": "shirley          Xiaomi_78",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "286c073278bc",
+        "channel": 1,
+        "count": 189
+    },
+    "c83a3598bd91": {
+        "ssid": "Tenda_mmc",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "c83a3598bd91",
+        "channel": 9,
+        "count": 83
+    },
+    "78321bd22a58": {
+        "ssid": "dlink-2A58",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "78321bd22a58",
+        "channel": 2,
+        "count": 125
+    },
+    "60e327c8ae09": {
+        "ssid": "RMC1",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "60e327c8ae09",
+        "channel": 1,
+        "count": 169
+    },
+    "ec086b8aff86": {
+        "ssid": "TP-LINK_FF86",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "ec086b8aff86",
+        "channel": 4,
+        "count": 7
+    },
+    "883d24915ba0": {
+        "ssid": "King-PV",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "883d24915ba0",
+        "channel": 11,
+        "count": 59
+    },
+    "9cd643cf420c": {
+        "ssid": "Yes Sir Club",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA/WPA2-PSK",
+        "hidden": false,
+        "bssid": "9cd643cf420c",
+        "channel": 1,
+        "count": 98
+    },
+    "0c9d924925d9": {
+        "ssid": "R 2.4",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "0c9d924925d9",
+        "channel": 3,
+        "count": 3
+    },
+    "a640a0678b8d": {
+        "ssid": "Laputa",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "a640a0678b8d",
+        "channel": 13,
+        "count": 52
+    },
+    "50d4f70790ef": {
+        "ssid": "RC-HKEAST",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "50d4f70790ef",
+        "channel": 2,
+        "count": 46
+    },
+    "184b0d3f2868": {
+        "ssid": "JEB-Office",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "184b0d3f2868",
+        "channel": 6,
+        "count": 133
+    },
+    "68ff7b264132": {
+        "ssid": "chuenki",
+        "authmode": "WPA/WPA2-PSK",
+        "channel": 2,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 224,
+        "bssid": "68ff7b264132"
+    },
+    "c4411e0e3764": {
+        "ssid": "Elias",
+        "authmode": "WPA2-PSK",
+        "channel": 2,
+        "hidden": false,
+        "devID": "M5C2.kg.01",
+        "count": 237,
+        "bssid": "c4411e0e3764"
+    },
+    "100c6b1126b6": {
+        "ssid": "OSCAR",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "100c6b1126b6",
+        "channel": 6,
+        "count": 179
+    },
+    "60e327e9e061": {
+        "ssid": "micfongkc",
+        "devID": "M5C2.kg.01",
+        "authmode": "WPA2-PSK",
+        "hidden": false,
+        "bssid": "60e327e9e061",
+        "channel": 13,
+        "count": 20
+    }
+}
