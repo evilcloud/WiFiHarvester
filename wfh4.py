@@ -32,9 +32,6 @@ def dict_to_list(data):
     ]
 
 
-# format changes
-# commented out one line and replaced with another
-# stations_filename = "/sd/stations.json"
 stations_filename = "/sd/stations.csv"
 devinfo_filename = "/sd/devid.json"
 
@@ -52,29 +49,13 @@ dev.cprintln(" model:", devmodel)
 dev.cprintln("\nData component:")
 dev.cprintln(" loading", stations_filename, "...")
 
-# format changes:
-# commented out one line and added 4
-# stations_db = dev.load_json(stations_filename)
-
 stations_db = {}
-# commented out the whole section due to possible bug
-# dev.cprint(" loading", stations_filename, "...")
-# csv_list = csvmp.read(stations_filename)
-# dev.cprint("len", len(csv_list))
-# time.sleep(100)
-# stations_db = {}
-# if csv_list:
-#     for line in csv_list:
-#         parsed_csv = list_to_dict(line)
-#         if parsed_csv:
-#             stations_db[parsed_csv[0]] = parsed_csv
+
 dev.cprintln("loaded", len(stations_db), "entries")
 dev.cprint(" populating unique SSID db ...")
 unique_ssid = get_unique_ssid(stations_db)
 dev.cprintln("populated with", len(unique_ssid), "entries")
-# dev.cprint(" fetching available backup files ...")
-# backup_nr = dev.get_backups_nr()
-# dev.cprintln(" ", backup_nr, " backups on the SD card")
+
 
 # Setting up variables before the launch
 dev.cprint("\nSetting variables ...")
@@ -90,9 +71,8 @@ authmode_choices = {
     4: "WPA/WPA2-PSK",
 }
 new_entries = []  # buffer for the newly discovered stations to be added to csv list
-save_to_json = False
 cycles = 0
-save_freq = 60
+save_freq = 3
 dev.cprintln("done")
 dev.csleep(2)
 
@@ -140,11 +120,8 @@ while True:
                 "devID": devid,
             }
 
-            save_to_json = True
-            # new_entries += stations_db[bssid]
+            new_entries.append(dict_to_list(stations_db[bssid]))
             new_stations.add(ssid)
-            # moved to the bottom. Not sure if it works, so leaving this here
-            # dev.draw_ssids(new_stations)
             new_stations_session_buffer = new_stations
         else:
             if ssid in new_stations_session_buffer:
@@ -159,14 +136,7 @@ while True:
     if len(new_stations) != nr_new_stations_buffer:
         dev.draw_cnew(len(new_stations))
         dev.draw_ssids(new_stations)
-    if save_to_json and cycles % save_freq == 0:
-        # This is not NatGeo -- don't need to save every cycle!
+    if len(new_entries) and cycles % save_freq == 0:
+        csvmp.add(new_entries, stations_filename)
+        new_entries = []
         dev.draw_ap(len(stations_db))
-        # format changes
-        # commented out the first line
-        # dev.write_json(stations_filename, stations_db)
-        cvs_list = []
-        for station in stations_db:
-            cvs_list.append(dict_to_list(stations_db[station]))
-        csvmp.overwritewrite(cvs_list, stations_filename)
-        save_to_json = False
