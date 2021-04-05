@@ -4,7 +4,7 @@ import time
 import uos as os
 
 
-def init():
+def initialize():
     lcd.clear(lcd.BLACK)
     lcd.font(lcd.FONT_DejaVu18)
     lcd.setCursor(0, 0)
@@ -36,19 +36,18 @@ def draw_grid():
 
 def draw_indicators(indicator, value):
     note = notify("draw indicators")
-    tvalue = str(value)
     coordinates = {
         "AP": (0, 0, 160, 50),
         "SSID": (160, 0, 160, 50),
         "Cf": (0, 50, 160, 50),
         "Cn": (160, 50, 160, 50),
     }
-    x, y, x2, y2 = indicator.get(coordinates)
+    x, y, x2, y2 = coordinates[indicator]
     text = str(value)
     text_halfwidth = int(lcd.textWidth(text) / 2)
-    lcd.rect(x, y, x2, y2)
+    lcd.rect(x, y, x2, y2, lcd.BLACK, lcd.BLACK)
     lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(x + 2, y + 2, text)
+    lcd.text(x + 2, y + 2, indicator)
     lcd.font(lcd.FONT_DejaVu40)
     lcd.text(x + (x2 - text_halfwidth), y + 5, text)
     unnotify(note)
@@ -151,6 +150,7 @@ def draw_cycles(cycles, undraw=False):
 
 
 def load_json(filename):
+    filename = "/sd/" + filename
     content = {}
     try:
         note = notify("reading " + filename)
@@ -165,6 +165,7 @@ def load_json(filename):
 
 
 def write_json(filename, content):
+    filename = "/sd/" + filename
     # existing backup file
     # note = notify("backup")
     # backup_name = "/sd/backup"
