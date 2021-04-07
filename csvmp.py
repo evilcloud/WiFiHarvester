@@ -17,9 +17,9 @@ def read(filename, delimiter=","):
 
 def _parse_list_to_csv(data, delimiter):
     csv = ""
-    if type(data) != list:
-        data = [data]
     for line in data:
+        if type(line) != list:
+            line = list(line)
         csv += delimiter.join([str(i) for i in line]) + "\n"
     return csv
 
@@ -29,8 +29,15 @@ def overwritewrite(data, filename, delimiter=","):
 
 
 def add(data, filename, delimiter=","):
-    _write(data, filename, delimiter, "a")
-
+    # _write(data, filename, delimiter, "a")
+    csv = _parse_list_to_csv(data, delimiter)
+    try:
+        with open(filename, "a") as f:
+            f.write(csv)
+        err = False
+    except Exception:
+        err = True
+    return err
 
 def _write(data, filename, delimiter, mode):
     csv = _parse_list_to_csv(data, delimiter)
