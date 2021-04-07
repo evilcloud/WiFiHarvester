@@ -17,9 +17,9 @@ def cclear(color=lcd.BLACK):
 
 
 def cprint(*args):
-    lcd.print(" ".join([str(i) for i in args]))
-    # for i in args:
-    #     lcd.print(str(i) + " ")
+    # lcd.print(" ".join([str(i) for i in args]))
+    for i in args:
+        lcd.print(str(i) + " ")
 
 
 def cprintln(*args):
@@ -74,6 +74,14 @@ def draw_ssid(value):
     lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 10, str(value))
 
 
+def draw_cycle(value):
+    lcd.rect(160, 0, 160, 50, lcd.BLACK, lcd.BLACK)
+    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.text(161, 1, "Cycle")
+    lcd.font(lcd.FONT_DejaVu40)
+    lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 10, str(value))
+
+
 def draw_cfamiliar(value):
     lcd.rect(0, 50, 160, 50, lcd.BLACK, lcd.BLACK)
     lcd.font(lcd.FONT_DefaultSmall)
@@ -85,7 +93,7 @@ def draw_cfamiliar(value):
 def draw_cnew(value):
     lcd.rect(160, 50, 160, 50, lcd.BLACK, lcd.BLACK)
     lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(161, 51, "Cf")
+    lcd.text(161, 51, "Cn")
     lcd.font(lcd.FONT_DejaVu40)
     lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 60, str(value))
 
@@ -150,10 +158,10 @@ def draw_cycles(cycles, undraw=False):
 
 
 def load_json(filename):
-    filename = "/sd/" + filename
+    filename = filename
+    note = notify("reading " + filename)
     content = {}
     try:
-        note = notify("reading " + filename)
         with open(filename) as f:
             content = json.load(f)
             unnotify(note)
@@ -165,56 +173,12 @@ def load_json(filename):
 
 
 def write_json(filename, content):
-    filename = "/sd/" + filename
-    # existing backup file
-    # note = notify("backup")
-    # backup_name = "/sd/backup"
-    # filelist = os.listdir("/sd/")
-    # note = notify("defining backup")
-    # for i in range(100):
-    #     construct = backup_name + str(i) + ".json"
-    #     if construct not in filelist:
-    #         backup_name = construct
-    #         unnotify(note)
-    # else:
-    #     note = notify("removing old file")
-    #     try:
-    #         os.remove(backup_name + ".json")
-    #         backup_name = backup_name + ".json"
-    #     except:
-    #         unnotify(note)
-    #         note = notify("failed to remove " + backup_name)
-    #         time.sleep(2)
-    #         pass
-    #     unnotify(note)
-    # try:
-    #     note = notify("renaming " + filename)
-    #     f = open(filename)
-    #     f.close()
-    #     os.rename(filename, backup_name)
-    #     unnotify(note)
-    # except:
-    #     note = notify("failed to rename ")
-    #     time.sleep(2)
-    #     pass
-    # unnotify(note)
-    note = notify("saving")
+    # note = notify("saving")
     try:
         with open(filename, "w+") as f:
             json.dump(content, f)
     except Exception:
-        notify = notify("failed to save")
+        # notify = notify("failed to save")
         time.sleep(1)
-        unnotify(note)
-    unnotify(note)
-
-
-# def get_backups_nr():
-#     backup_name = "/sd/backup"
-#     filelist = os.listdir("/sd/")
-#     for i in filel:
-#         construct = backup_name + str(i) + ".json"
-
-
-# def get_backups_nr():
-#     return len([x for x in os.listdir("/sd") if x[:10] == "/sd/backup"])
+        # unnotify(note)
+    # unnotify(note)

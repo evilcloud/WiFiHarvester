@@ -31,9 +31,13 @@ def overwritewrite(data, filename, delimiter=","):
 def add(data, filename, delimiter=","):
     # _write(data, filename, delimiter, "a")
     csv = _parse_list_to_csv(data, delimiter)
-    with open(filename, "a") as f:
-        f.write(csv)
-
+    try:
+        with open(filename, "a") as f:
+            f.write(csv)
+        err = False
+    except Exception:
+        err = True
+    return err
 
 def _write(data, filename, delimiter, mode):
     csv = _parse_list_to_csv(data, delimiter)
