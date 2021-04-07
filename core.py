@@ -28,74 +28,64 @@ def cprintln(*args):
 
 
 def draw_grid():
-    lcd.line(5, 105, 320, 105)
+    lcd.line(5, 103, 320, 103)
     # lcd.line(0, 50, 320, 50)
     # lcd.line(0, 100, 320, 100)
-    # lcd.line(160, 0, 160, 100)
+    # lcd.line(160, 0, 160, 103)
 
 
-def draw_indicators(indicator, value):
-    note = notify("draw indicators")
-    coordinates = {
-        "AP": (0, 0, 160, 50),
-        "SSID": (160, 0, 160, 50),
-        "Cf": (0, 50, 160, 50),
-        "Cn": (160, 50, 160, 50),
-    }
-    x, y, x2, y2 = coordinates[indicator]
-    text = str(value)
-    text_halfwidth = int(lcd.textWidth(text) / 2)
-    lcd.rect(x, y, x2, y2, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(x + 2, y + 2, indicator)
-    lcd.font(lcd.FONT_DejaVu40)
-    lcd.text(x + (x2 - text_halfwidth), y + 5, text)
-    unnotify(note)
+# def draw_indicators(indicator, value):
+#     note = notify("draw indicators")
+#     coordinates = {
+#         "AP": (0, 0, 160, 50),
+#         "SSID": (160, 0, 160, 50),
+#         "Cf": (0, 50, 160, 50),
+#         "Cn": (160, 50, 160, 50),
+#     }
+#     x, y, x2, y2 = coordinates[indicator]
+#     text = str(value)
+#     text_halfwidth = int(lcd.textWidth(text) / 2)
+#     lcd.rect(x, y, x2, y2, lcd.BLACK, lcd.BLACK)
+#     lcd.font(lcd.FONT_DefaultSmall)
+#     lcd.text(x + 2, y + 2, indicator)
+#     lcd.font(lcd.FONT_DejaVu40)
+#     lcd.text(x + (x2 - text_halfwidth), y + 5, text)
+#     unnotify(note)
 
 
-def get_text_halfwidth(text):
+def text_halfwidth(text):
     return int(lcd.textWidth(str(text)) / 2)
 
 
-def draw_ap(value):
-    lcd.rect(0, 0, 160, 50, lcd.BLACK, lcd.BLACK)
+def draw_quadrants(position, legend, value):
+    x, y = position
+    value = str(value)
+    lcd.rect(x + 1, y + 1, 159, 49, lcd.BLACK, lcd.BLACK)
     lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(1, 1, "AP")
+    lcd.text(x + 1, y + 1, legend)
     lcd.font(lcd.FONT_DejaVu40)
-    text = str(value)
-    lcd.text(int((320 / 4) - get_text_halfwidth(text)), 10, str(text))
+    middle_x = int(x + (320 / 4) - text_halfwidth(value))
+    lcd.text(middle_x, y + 10, value)
+
+
+def draw_ap(value):
+    draw_quadrants((0, 0), "AP", value)
 
 
 def draw_ssid(value):
-    lcd.rect(160, 0, 160, 50, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(161, 1, "SSID")
-    lcd.font(lcd.FONT_DejaVu40)
-    lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 10, str(value))
+    draw_quadrants((160, 0), "SSID", value)
 
 
 def draw_cycle(value):
-    lcd.rect(160, 0, 160, 50, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(161, 1, "Cycle")
-    lcd.font(lcd.FONT_DejaVu40)
-    lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 10, str(value))
+    draw_quadrants((160, 0), "Cycles", value)
 
 
 def draw_cfamiliar(value):
-    lcd.rect(0, 50, 160, 50, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(1, 51, "Cf")
-    lcd.font(lcd.FONT_DejaVu40)
-    lcd.text(int((320 / 4) - get_text_halfwidth(value)), 60, str(value))
+    draw_quadrants((0, 50), "Cf", value)
 
 
 def draw_cnew(value):
-    lcd.rect(160, 50, 160, 50, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
-    lcd.text(161, 51, "Cn")
-    lcd.font(lcd.FONT_DejaVu40)
-    lcd.text(int(((320 / 4) * 3) - get_text_halfwidth(value)), 60, str(value))
+    draw_quadrants((160, 50), "Cn", value)
 
 
 def draw_ssids(valuelist):
@@ -105,7 +95,6 @@ def draw_ssids(valuelist):
     x = 0
     y = 110
     lcd.font(lcd.FONT_Ubuntu)
-    # lcd.setwin(0, 110, 160, 230)
     lcd.rect(0, 105, 320, 130, lcd.BLACK, lcd.BLACK)
     for i, text in enumerate(valuelist):
         if i == max_lenght:

@@ -28,7 +28,7 @@ def draw_indicators(indicator, value):
 
 
 def get_text_halfwidth(text):
-    return core.get_text_halfwidth(text)
+    return core.text_halfwidth(text)
 
 
 def draw_ap(value):
