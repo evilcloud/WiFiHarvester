@@ -12,6 +12,7 @@ def initialize():
     lcd.font(lcd.FONT_Ubuntu)
 
 
+# printing functions
 def cclear(color=lcd.BLACK):
     lcd.clear(color)
 
@@ -29,28 +30,11 @@ def cprintln(*args):
 
 def draw_grid():
     lcd.line(5, 103, 320, 103)
-    # lcd.line(0, 50, 320, 50)
-    # lcd.line(0, 100, 320, 100)
-    # lcd.line(160, 0, 160, 103)
+    # lcd.line(160, 0, 160, 50)
+    # lcd.line(160, 50, 320, 50)
 
 
-# def draw_indicators(indicator, value):
-#     note = notify("draw indicators")
-#     coordinates = {
-#         "AP": (0, 0, 160, 50),
-#         "SSID": (160, 0, 160, 50),
-#         "Cf": (0, 50, 160, 50),
-#         "Cn": (160, 50, 160, 50),
-#     }
-#     x, y, x2, y2 = coordinates[indicator]
-#     text = str(value)
-#     text_halfwidth = int(lcd.textWidth(text) / 2)
-#     lcd.rect(x, y, x2, y2, lcd.BLACK, lcd.BLACK)
-#     lcd.font(lcd.FONT_DefaultSmall)
-#     lcd.text(x + 2, y + 2, indicator)
-#     lcd.font(lcd.FONT_DejaVu40)
-#     lcd.text(x + (x2 - text_halfwidth), y + 5, text)
-#     unnotify(note)
+# quadrant functions: large quadrants
 
 
 def text_halfwidth(text):
@@ -76,16 +60,38 @@ def draw_ssid(value):
     draw_quadrants((160, 0), "SSID", value)
 
 
-def draw_cycle(value):
-    draw_quadrants((160, 0), "Cycles", value)
-
-
 def draw_cfamiliar(value):
     draw_quadrants((0, 50), "Cf", value)
 
 
 def draw_cnew(value):
     draw_quadrants((160, 50), "Cn", value)
+
+
+# quadrant functions: top-right info quadrant
+def draw_cycle(value):
+    lcd.rect(161, 0, 160, 25, lcd.BLACK, lcd.BLACK)
+    lcd.font(lcd.FONT_DejaVu18)
+    middle_x = int(160 + (320 / 4) - text_halfwidth("C " + str(value)))
+    lcd.text(middle_x, 5, str(value))
+    # draw_quadrants((160, 0), "Cycles", value)
+
+
+def draw_status(text):
+    lcd.rect(161, 25, 159, 23, lcd.BLACK, lcd.BLACK)
+    lcd.font(lcd.FONT_Ubuntu)
+    lcd.text(161, 30, text)
+
+
+def reset_progress_bar():
+    lcd.rect(160, 24, 340, 24, lcd.BLACK, lcd.BLACK)
+
+
+def draw_progress_line(value):
+    lcd.line(161, 24, 160 / value, 24)
+
+
+# non-quadrant ssid listing
 
 
 def draw_ssids(valuelist):
@@ -107,6 +113,17 @@ def draw_ssids(valuelist):
         lcd.text(x, y, text)
         y = y + vert_offset
     unnotify(note)
+
+
+# notifications drawing
+
+
+def circle():
+    lcd.circle(310, 230, 5, lcd.RED, lcd.RED)
+
+
+def uncircle():
+    lcd.cirle(310, 230, 6, lcd.BLACK, lcd.BLACK)
 
 
 def notify(message):
@@ -132,15 +149,15 @@ def csleep(t):
     lcd.circle(310, 230, 6, lcd.BLACK, lcd.BLACK)
 
 
-def draw_cycles(cycles, undraw=False):
-    # prints 'cycles' in 250, 0). Will print if second argument is True
-    lcd.font(lcd.FONT_DefaultSmall)
-    x, y = 250, 0
-    text = "ckl: " + str(cycles)
-    if undraw:
-        lcd.textClear(x, y, text)
-    else:
-        lcd.text(x, y, text)
+# def draw_cycles(cycles, undraw=False):
+#     # prints 'cycles' in 250, 0). Will print if second argument is True
+#     lcd.font(lcd.FONT_DefaultSmall)
+#     x, y = 250, 0
+#     text = "ckl: " + str(cycles)
+#     if undraw:
+#         lcd.textClear(x, y, text)
+#     else:
+#         lcd.text(x, y, text)
 
 
 # ========================= FS stuff ========================================
@@ -148,17 +165,15 @@ def draw_cycles(cycles, undraw=False):
 
 def load_json(filename):
     filename = filename
-    note = notify("reading " + filename)
     content = {}
     try:
         with open(filename) as f:
             content = json.load(f)
-            unnotify(note)
+            message = "loaded " + str(len(content)) + " entries"
     except Exception:
-        note = notify("unavailable. making new")
+        message = "unavailable. making new"
         write_json(filename, content)
-        unnotify(note)
-    return content
+    return content, message
 
 
 def write_json(filename, content):
