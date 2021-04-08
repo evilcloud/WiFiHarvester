@@ -34,17 +34,37 @@ def load_prev_csv(stations_filename):
     return bssid_db  # , unique_ssid_db
 
 
+def cclear(color=lcd.BLACK):
+    lcd.clear(color)
+
+
+def cprint(*args):
+    # lcd.print(" ".join([str(i) for i in args]))
+    for i in args:
+        lcd.print(str(i) + " ")
+
+
+def cprintln(*args):
+    cprint(*args)
+    lcd.print("\n")
+
+
 def initialize(stations_filename, devinfo_filename):
-    dev.initialize()
-    dev.cprintln("\nHardware component:")
-    dev.cprint(" loading", devinfo_filename, "...")
+    lcd.clear(lcd.BLACK)
+    # lcd.font(lcd.FONT_DejaVu18)
+    lcd.setCursor(0, 0)
+    lcd.print("launching WiFiHarvester 3.2\non StickC (Plus) LoboMP device\n")
+    # lcd.font(lcd.FONT_Ubuntu)
+
+    cprintln("\nHardware component:")
+    cprint(" loading", devinfo_filename, "...")
     d, msg = dev.load_json(devinfo_filename)
-    dev.cprintln(msg)
+    cprintln(msg)
     devid = d.get("devID", "unknown")
-    dev.cprintln(" ID:", devid)
+    cprintln(" ID:", devid)
     devmodel = d.get("model", "unknown")
-    dev.cprintln(" model:", devmodel)
-    dev.cprintln("\nData component:")
+    cprintln(" model:", devmodel)
+    cprintln("\nData component:")
     # dev.cprintln(" loading", stations_filename, "...")
     return devid
 
@@ -53,12 +73,12 @@ stations_filename = "/flash/stations.csv"
 devinfo_filename = "/flash/devid.json"
 
 devid = initialize(stations_filename, devinfo_filename)
-dev.cprintln(" loading previous records")
+cprintln(" loading previous records")
 bssid_db = load_prev_csv(stations_filename)  # and unique_ssid_db
-dev.cprintln(" BSSID:", len(bssid_db))  # , ", SSID:", len(unique_ssid_db))
+cprintln(" BSSID:", len(bssid_db))  # , ", SSID:", len(unique_ssid_db))
 
 # Setting up variables before the launch
-dev.cprint("\nSetting variables ...")
+cprint("\nSetting variables ...")
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 
@@ -78,14 +98,14 @@ cycles = 0
 cycle_rec_frequency = 10
 # unique_ssid_nr = 0
 new_bssids_rec_trigger = 60
-dev.cprintln("done")
-dev.csleep(2)
+cprintln("done")
+csleep(2)
 
 # Let's go!
-dev.cclear()
-dev.draw_grid()
+cclear()
+draw_grid()
 # We already have the values of these two, even if they are 0
-dev.draw_ap(len(bssid_db))
+draw_ap(len(bssid_db))
 # dev.draw_ssid(len(unique_ssid_db))
 
 while True:
