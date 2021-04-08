@@ -32,6 +32,7 @@ def draw_grid():
     # lcd.line(5, 103, 320, 103)
     # lcd.line(160, 0, 160, 50)
     # lcd.line(160, 50, 320, 50)
+    pass
 
 
 # quadrant functions: large quadrants
