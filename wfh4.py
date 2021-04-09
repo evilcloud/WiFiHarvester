@@ -3,6 +3,7 @@ import network
 import utime as time
 import ubinascii
 import csvmp
+import fsop
 
 # HARDWARE CHOICES
 import core as dev
@@ -36,6 +37,10 @@ def load_prev_csv(stations_filename):
     return bssid_db  # , unique_ssid_db
 
 
+def format_error(error, cycle):
+    return "=====\nCycle " + str(cycle) + "\n" + str(error)
+
+
 def initialize(stations_filename, devinfo_filename):
     dev.initialize()
     dev.cprintln("\nHardware component:")
@@ -53,6 +58,7 @@ def initialize(stations_filename, devinfo_filename):
 
 stations_filename = "/flash/stations.csv"
 devinfo_filename = "/flash/devid.json"
+err_log_filename = "/flash/err.log"
 
 devid = initialize(stations_filename, devinfo_filename)
 dev.cprintln(" loading previous records")
@@ -102,9 +108,11 @@ while True:
         current_scan = sta.scan()
         # dev.draw_status("scanned")
         dev.draw_dot_scan("black")
-    except Exception:
+    except Exception as e:
         dev.draw_status("scan error " + str(cycles))
         dev.draw_dot_scan("red")
+        err = format_error(e, cycles)
+        fsop.add(err_log_filename, err)
     dev.draw_cycle(str(cycles))
     # dev.reset_progress_bar()
     for i, station in enumerate(current_scan):
@@ -150,9 +158,10 @@ while True:
             new_entries.clear()
             save_error_counter = 0
         else:
-            dev.draw_save("red")
+            dev.draw_dot_save("red")
             dev.draw_status("error saving cy " + str(cycles))
             save_error_counter += 1
+            fsop.add(err_log_filename, format_error(err, cycles))
 
     # reset fam/unfam buffer each cycle, because why would we need to carry it with us?
     unfamiliar_ssids.clear()
