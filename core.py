@@ -30,51 +30,114 @@ def cprintln(*args):
 
 def draw_grid():
     lcd.line(5, 103, 320, 103)
-    # lcd.line(160, 0, 160, 50)
-    # lcd.line(160, 50, 320, 50)
+    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.text(245, 55, "SC")
+    lcd.text(245, 70, "SV")
+    lcd.text(245, 85, "FU")
 
 
 # quadrant functions: large quadrants
 
 
-def text_halfwidth(text):
-    return int(lcd.textWidth(str(text)) / 2)
+# def text_halfwidth(text):
+#     return int(lcd.textWidth(str(text)) / 2)
 
 
-def draw_quadrants(position, legend, value):
+def draw_quadrants(position, vector, fonts, legend, value):
+    text_halfwidth = lambda text: int(lcd.textWidth(text) / 2)
     x, y = position
+    x1, y1 = vector
+    font_small, font_large = fonts
     value = str(value)
-    lcd.rect(x + 1, y + 1, 159, 49, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DefaultSmall)
+    lcd.rect(x + 1, y + 1, x1 - 1, y1 - 1, lcd.BLACK, lcd.BLACK)
+    lcd.font(font_small)
     lcd.text(x + 1, y + 1, legend)
-    lcd.font(lcd.FONT_DejaVu40)
-    middle_x = int(x + (320 / 4) - text_halfwidth(value))
-    lcd.text(middle_x, y + 10, value)
+    lcd.font(font_large)
+    middle_x = int(x + (x1 / 2) - text_halfwidth(value))
+    lcd.text(middle_x, y + 1, value)
+
+
+# big quadrants
+def big_quadrant(position, legend, value):
+    draw_quadrants(
+        position, (160, 50), (lcd.FONT_DefaultSmall, lcd.FONT_DejaVu40), legend, value
+    )
 
 
 def draw_ap(value):
-    draw_quadrants((0, 0), "AP", value)
+    big_quadrant((0, 0), "AP", value)
 
 
 def draw_ssid(value):
-    draw_quadrants((160, 0), "SSID", value)
+    big_quadrant((160, 0), "SSID", value)
 
 
 def draw_cfamiliar(value):
-    draw_quadrants((0, 50), "Cf", value)
+    third_quadrant((0, 50), "Cf", value)
 
 
 def draw_cnew(value):
-    draw_quadrants((160, 50), "Cn", value)
+    third_quadrant((120, 50), "Cn", value)
+
+
+# one third quadrant
+def third_quadrant(position, legend, value):
+    draw_quadrants(
+        position, (120, 50), (lcd.FONT_DefaultSmall, lcd.FONT_DejaVu40), legend, value
+    )
 
 
 # quadrant functions: top-right info quadrant
 def draw_cycle(value):
-    lcd.rect(161, 0, 160, 25, lcd.BLACK, lcd.BLACK)
-    lcd.font(lcd.FONT_DejaVu18)
-    middle_x = int(160 + (320 / 4) - text_halfwidth("C " + str(value)))
-    lcd.text(middle_x, 5, str(value))
-    # draw_quadrants((160, 0), "Cycles", value)
+    draw_quadrants(
+        (240, 0), (80, 25), (lcd.FONT_DefaultSmall, lcd.FONT_DejaVu18), "Cy", value
+    )
+
+
+def draw_bssid_loop(value):
+    draw_quadrants(
+        (160, 0), (80, 25), (lcd.FONT_DefaultSmall, lcd.FONT_DejaVu18), "", value
+    )
+
+
+# indicator dots
+def draw_dot(y_position, legend, color):
+    positions = {
+        "SC": 60,
+        "SV": 75,
+        "FU": 90,
+    }
+    lcd.circle(300, positions.get(legend), 5, lcd.GREEN, color)
+
+
+def draw_dot_scan(value):
+    values = {
+        "black": lcd.BLACK,
+        "yellow": lcd.YELLOW,
+        "green": lcd.GREEN,
+        "red": lcd.RED,
+    }
+    draw_dot(60, "SC", values.get(value))
+
+
+def draw_dot_save(value):
+    values = {
+        "black": lcd.BLACK,
+        "yellow": lcd.YELLOW,
+        "green": lcd.GREEN,
+        "red": lcd.RED,
+    }
+    draw_dot(75, "SV", values.get(value))
+
+
+def draw_dot_fu(value):
+    values = {
+        "black": lcd.BLACK,
+        "yellow": lcd.YELLOW,
+        "green": lcd.GREEN,
+        "red": lcd.RED,
+    }
+    draw_dot(90, "FU", values.get(value))
 
 
 def draw_status(text):
@@ -147,17 +210,6 @@ def csleep(t):
     lcd.circle(310, 230, 5, lcd.GREEN, lcd.BLACK)
     time.sleep(t)
     lcd.circle(310, 230, 6, lcd.BLACK, lcd.BLACK)
-
-
-# def draw_cycles(cycles, undraw=False):
-#     # prints 'cycles' in 250, 0). Will print if second argument is True
-#     lcd.font(lcd.FONT_DefaultSmall)
-#     x, y = 250, 0
-#     text = "ckl: " + str(cycles)
-#     if undraw:
-#         lcd.textClear(x, y, text)
-#     else:
-#         lcd.text(x, y, text)
 
 
 # ========================= FS stuff ========================================
