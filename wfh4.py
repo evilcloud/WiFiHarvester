@@ -95,17 +95,20 @@ dev.draw_ap(len(bssid_db))
 
 while True:
     cycles += 1
-    dev.draw_status("scanning")
+    # dev.draw_status("scanning")
     try:
+        dev.draw_dot_scan("yellow")
         current_scan = sta.scan()
-        dev.draw_status("scanned")
+        # dev.draw_status("scanned")
+        dev.draw_dot_scan("black")
     except Exception:
-        dev.draw_status("scan error")
-    dev.draw_cycle("S " + str(len(current_scan)) + "  C " + str(cycles))
+        dev.draw_status("scan error " + str(cycles))
+        dev.draw_dot_scan("red")
+    dev.draw_cycle(str(cycles))
     # dev.reset_progress_bar()
     for i, station in enumerate(current_scan):
         # dev.draw_progress_line(i)
-        dev.draw_cycle(str(i + 1) + "/" + str(len(current_scan)) + "  C " + str(cycles))
+        dev.draw_bssid_loop(str(i + 1) + "/" + str(len(current_scan)))
         # dev.draw_status("looping " + str(i + 1) + " of " + str(len(current_scan)))
         bssid = ubinascii.hexlify(station[1]).decode()
         ssid = station[0].decode()
@@ -114,7 +117,7 @@ while True:
         hidden = str(station[5])
 
         if bssid not in bssid_db:
-            dev.draw_status("BSSID " + str(bssid))
+            # dev.draw_status(str(bssid))
             bssid_db.add(bssid)
             dev.draw_ap(len(bssid_db))
 
@@ -128,25 +131,26 @@ while True:
         else:
             familiar_ssids.add(ssid)
     if unfamiliar_ssids:
-        dev.draw_status("unfam SSID " + str(cycles))
         dev.draw_cnew(len(unfamiliar_ssids))
         dev.draw_ssids(unfamiliar_ssids)
 
     if familiar_ssids:
-        dev.draw_status("fam SSID " + str(cycles))
         dev.draw_cfamiliar(len(familiar_ssids))
 
     if new_entries and (
         cycles % cycle_rec_frequency == 0 or len(bssid_db) % new_bssids_rec_trigger == 0
     ):
-        dev.draw_status("saving" + str(len(new_entries)) + " stations")
+        dev.draw_dot_save("yellow")
+        # dev.draw_status("saving" + str(len(new_entries)) + " stations")
         err = csvmp.add(new_entries, stations_filename)
         if not err:
-            dev.draw_status("saved " + str(len(new_entries)) + " stations")
+            dev.draw_dot_save("black")
+            # dev.draw_status("saved " + str(len(new_entries)) + " stations")
             new_entries.clear()
             save_error_counter = 0
         else:
-            dev.draw_status("error saving. data cached")
+            dev.draw_save("red")
+            dev.draw_status("error saving cy " + str(cycles))
             save_error_counter += 1
 
     # reset fam/unfam buffer each cycle, because why would we need to carry it with us?
