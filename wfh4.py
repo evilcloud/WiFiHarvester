@@ -5,8 +5,9 @@ import ubinascii
 import csvmp
 
 # HARDWARE CHOICES
-# import core as dev
-import stickc as dev
+import core as dev
+
+# import stickc as dev
 
 
 def load_prev_csv(stations_filename):
@@ -62,7 +63,7 @@ dev.cprint("\nSetting variables ...")
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 
-
+# Service variables
 new_stations_session_buffer = set()
 authmode_choices = {
     0: "open",
@@ -75,8 +76,12 @@ new_entries = set()  # buffer for the newly discovered stations to be added to c
 unfamiliar_ssids = set()
 familiar_ssids = set()
 cycles = 0
-cycle_rec_frequency = 10
+save_error_counter = 0
+
 # unique_ssid_nr = 0
+
+# Setting variables
+cycle_rec_frequency = 10
 new_bssids_rec_trigger = 60
 dev.cprintln("done")
 dev.csleep(2)
@@ -90,12 +95,18 @@ dev.draw_ap(len(bssid_db))
 
 while True:
     cycles += 1
-    current_scan = sta.scan()
+    dev.draw_status("scanning")
+    try:
+        current_scan = sta.scan()
+        dev.draw_status("scanned")
+    except Exception:
+        dev.draw_status("scan error")
     dev.draw_cycle("S " + str(len(current_scan)) + "  C " + str(cycles))
     # dev.reset_progress_bar()
     for i, station in enumerate(current_scan):
         # dev.draw_progress_line(i)
-        dev.draw_status("looping " + str(i + 1) + " of " + str(len(current_scan)))
+        dev.draw_cycle(str(i + 1) + "/" + str(len(current_scan)) + "  C " + str(cycles))
+        # dev.draw_status("looping " + str(i + 1) + " of " + str(len(current_scan)))
         bssid = ubinascii.hexlify(station[1]).decode()
         ssid = station[0].decode()
         channel = str(station[2])
@@ -103,6 +114,7 @@ while True:
         hidden = str(station[5])
 
         if bssid not in bssid_db:
+            dev.draw_status("BSSID " + str(bssid))
             bssid_db.add(bssid)
             dev.draw_ap(len(bssid_db))
 
@@ -116,10 +128,12 @@ while True:
         else:
             familiar_ssids.add(ssid)
     if unfamiliar_ssids:
+        dev.draw_status("unfam SSID " + str(cycles))
         dev.draw_cnew(len(unfamiliar_ssids))
         dev.draw_ssids(unfamiliar_ssids)
 
     if familiar_ssids:
+        dev.draw_status("fam SSID " + str(cycles))
         dev.draw_cfamiliar(len(familiar_ssids))
 
     if new_entries and (
@@ -130,8 +144,10 @@ while True:
         if not err:
             dev.draw_status("saved " + str(len(new_entries)) + " stations")
             new_entries.clear()
+            save_error_counter = 0
         else:
             dev.draw_status("error saving. data cached")
+            save_error_counter += 1
 
     # reset fam/unfam buffer each cycle, because why would we need to carry it with us?
     unfamiliar_ssids.clear()
