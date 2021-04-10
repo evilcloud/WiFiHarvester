@@ -238,3 +238,26 @@ def write_json(filename, content):
         time.sleep(1)
         # unnotify(note)
     # unnotify(note)
+
+
+def add(filename, data):
+    try:
+        with open(filename, "a") as f:
+            f.write(data)
+        err = False
+    except Exception as e:
+        err = str(e)
+    return err
+
+
+def count_entries(filename):
+    counter = 0
+    try:
+        with open(filename) as f:
+            full_file = f.read()
+        for line in full_file:
+            if line[:2] == "===":
+                counter += 1
+    except Exception:
+        pass
+    return counter

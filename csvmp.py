@@ -2,16 +2,16 @@ import os
 
 
 def read(filename, delimiter=","):
+    lines = []
     try:
         with open(filename) as f:
             csv_data = f.read()
+        csv_lines = csv_data.split("\n")
+        for line in csv_lines:
+            line = line.strip()
+            lines.append(line.split(delimiter))
     except Exception:
-        return []
-    csv_lines = csv_data.split("\n")
-    lines = []
-    for line in csv_lines:
-        line = line.strip()
-        lines.append(line.split(delimiter))
+        pass
     return lines
 
 
@@ -19,7 +19,6 @@ def _parse_list_to_csv(data, delimiter):
     csv = ""
     for line in data:
         if type(line) != list:
-
             line = list(line)
         csv += delimiter.join([str(i) for i in line]) + "\n"
     return csv
@@ -36,8 +35,8 @@ def add(data, filename, delimiter=","):
         with open(filename, "a") as f:
             f.write(csv)
         err = False
-    except Exception:
-        err = True
+    except Exception as e:
+        err = str(e)
     return err
 
 

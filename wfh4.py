@@ -23,6 +23,7 @@ def load_prev_csv(stations_filename):
     bssid_db = set()
     # unique_ssid_db = set()
     b = csvmp.read(stations_filename)
+
     dev.cprint("[")
     for i, entry in enumerate(b):
         if len(entry) > 2:
@@ -34,6 +35,19 @@ def load_prev_csv(stations_filename):
             break
     dev.cprintln("]")
     return bssid_db  # , unique_ssid_db
+
+
+def format_error(error, cycle):
+    """returns a formated log entry for further saving
+
+    Args:
+        error (any): the error message
+        cycle (int): the cycle number
+
+    Returns:
+        str: formated string with leading ==== and a break at the end
+    """
+    return "=====\nCycle " + str(cycle) + "\n" + str(error) + "\n\n"
 
 
 def initialize(stations_filename, devinfo_filename):
@@ -53,6 +67,7 @@ def initialize(stations_filename, devinfo_filename):
 
 stations_filename = "/flash/stations.csv"
 devinfo_filename = "/flash/devid.json"
+err_log_filename = "/flash/err.log"
 
 devid = initialize(stations_filename, devinfo_filename)
 dev.cprintln(" loading previous records")
@@ -77,7 +92,6 @@ new_entries = set()  # buffer for the newly discovered stations to be added to c
 unfamiliar_ssids = set()
 familiar_ssids = set()
 cycles = 0
-save_error_counter = 0
 
 # unique_ssid_nr = 0
 
@@ -96,19 +110,18 @@ dev.draw_ap(len(bssid_db))
 
 while True:
     cycles += 1
-    # dev.draw_status("scanning")
     try:
         dev.draw_dot_scan("yellow")
         current_scan = sta.scan()
         # dev.draw_status("scanned")
         dev.draw_dot_scan("black")
-    except Exception:
+    except Exception as e:
         dev.draw_status("scan error " + str(cycles))
         dev.draw_dot_scan("red")
+        err = format_error(e, cycles)
+        dev.add(err_log_filename, err)
     dev.draw_cycle(str(cycles))
-    # dev.reset_progress_bar()
     for i, station in enumerate(current_scan):
-        # dev.draw_progress_line(i)
         dev.draw_bssid_loop(str(i + 1) + "/" + str(len(current_scan)))
         # dev.draw_status("looping " + str(i + 1) + " of " + str(len(current_scan)))
         bssid = ubinascii.hexlify(station[1]).decode()
@@ -124,11 +137,6 @@ while True:
 
             new_entries.add((bssid, ssid, channel, authmode, hidden))
             unfamiliar_ssids.add(ssid)
-
-            # unique_ssid_db.add(ssid)
-            # if len(unique_ssid_db) > unique_ssid_nr:
-            #     dev.draw_ssid(unique_ssid_nr)
-            #     unique_ssid_nr = len(unique_ssid_db)
         else:
             familiar_ssids.add(ssid)
     if unfamiliar_ssids:
@@ -146,13 +154,11 @@ while True:
         err = csvmp.add(new_entries, stations_filename)
         if not err:
             dev.draw_dot_save("black")
-            # dev.draw_status("saved " + str(len(new_entries)) + " stations")
             new_entries.clear()
-            save_error_counter = 0
         else:
-            dev.draw_save("red")
+            dev.draw_dot_save("red")
             dev.draw_status("error saving cy " + str(cycles))
-            save_error_counter += 1
+            dev.add(err_log_filename, format_error(err, cycles))
 
     # reset fam/unfam buffer each cycle, because why would we need to carry it with us?
     unfamiliar_ssids.clear()
