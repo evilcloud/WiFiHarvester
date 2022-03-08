@@ -1,6 +1,4 @@
-# WiFiHarvester
-
-## Is the ubiquitous surveillance stressing you out?
+# Is the ubiquitous surveillance stressing you out?
 
 If the answer is “yes”, which it is, of course, then let us take a look at your current state of exposure. 
 
@@ -14,6 +12,6 @@ But then again, this isn’t always the case. This time you can take a deep brea
 
 <img width="1208" alt="image" src="https://user-images.githubusercontent.com/43460664/157232999-66ce0b93-83ee-4c04-9181-ea12cbd4d247.png">
 
-But it’s ok, I am a friendly artist. I don’t hack into your network, I don’t install keyloggers on your computer and don’t steal your passwords. Why? Is it because “you” aren’t personal enough? Is it because your dream is being the “boss” or, just like about 10% of the WiFi names I’ve scanned? You are exposed, but you are also anonymous. How am I suppose to pick you, with your D-Link Wireless AC750 router, if about 40% of people on my lists have the same? How are you different? Did you think you are so clever calling your WiFi “FBI Surveillance Van 05”? Please, there are more than 100 of these I’ve found within a week of driving. I can’t find you. You are a mass. Homogenous mass. I can tell who are you in different part of the city, but this is as personal as it gets. And to be honest, being mashed up with hundreds of thousand of people as one isn’t very personal.
+But it’s ok, I am a friendly artist/philosopher. I don’t hack into your network, I don’t install keyloggers on your computer and don’t steal your passwords. Why? Is it because “you” aren’t personal enough? Is it because your dream is being the “boss” or, just like about 10% of the WiFi names I’ve scanned? You are exposed, but you are also anonymous. How am I suppose to pick you, with your D-Link Wireless AC750 router, if about 40% of people on my lists have the same? How are you different? Did you think you are so clever calling your WiFi “FBI Surveillance Van 05”? Please, there are more than 100 of these I’ve found within a week of driving. I can’t find you. You are a mass. Homogenous mass. I can tell who are you in different part of the city, but this is as personal as it gets. And to be honest, being mashed up with hundreds of thousand of people as one isn’t very personal.
 
 Am I even committing surveillance then? Who am I surveilling? Am I surveilling if there is no subject of surveillance?
